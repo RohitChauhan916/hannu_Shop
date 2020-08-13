@@ -29,7 +29,9 @@ get_header();
               ?>
 				    <div class="blog-div-block"> 
 						 <div class="featured-block">
-							 <?php the_post_thumbnail();?>
+							 <?php the_post_thumbnail('thumbnail', array(
+							 'loading' => 'lazy'
+							 ));?>
 						 </div> 
 						 <div class="blog-div-cont">
 						     <h2> <?php the_title();?>  </h2> 

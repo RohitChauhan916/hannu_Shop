@@ -32,7 +32,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="icon-bar"></span>                        
       </button>   
 	  <a class="navbar-brand" href="<?php echo site_url();?>">
-	    <img src="<?php echo get_theme_file_uri('img/logo.png')?>" alt="logo">
+	    <img loading=lazy src="<?php echo get_theme_file_uri('img/logo.png')?>" alt="logo">
 	  </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">  

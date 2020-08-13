@@ -9,7 +9,9 @@
 } ?>
 <section id="banner" class="about-banner infras-banner services-banner">
 <div class="banner_img">
-<?php the_post_thumbnail();?>
+<?php the_post_thumbnail('thumbnail', array(
+							 'loading' => 'lazy'
+							 ));?>
 </div>
  <div class="banner-caption">
 			<div class="banner_text">
