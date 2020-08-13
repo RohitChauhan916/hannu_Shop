@@ -203,7 +203,7 @@ p {
 #block .block-left-content::before {
 	position: absolute;
 	content: "";
-	background-image: url("../images/right-img.jpg");
+	background-image: url("../hannu/img/right-img.jpg");
 	height: 100%;
 }
 .block-right .block-left-content::before {
@@ -272,7 +272,7 @@ p {
 	width: 10%;
 	height: 94%;
 	content: "";
-	background-image: url("../images/strength-line-left.jpg");
+	background-image: url("../hannu/img/strength-line-left.jpg");
 	background-repeat: no-repeat;
 }
 #strength .block-left-content {
@@ -317,7 +317,7 @@ p {
 	width: 29%;
 	height: 94%;
 	content: "";
-	background-image: url("../images/client-left.png");
+	background-image: url("../hannu/img/client-left.png");
 	background-repeat: no-repeat;
 }
 .banner_text h1::before{
@@ -366,7 +366,7 @@ p {
 	width: 29%;
 	height: 94%;
 	content: "";
-	background-image: url("../images/contact-side.png");
+	background-image: url("../hannu/img/contact-side.png");
 	background-repeat: no-repeat;
 }
 #our-contact .client-title-block h1 {

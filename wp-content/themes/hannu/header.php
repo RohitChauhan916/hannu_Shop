@@ -4,7 +4,7 @@
   <title>Hannu</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="shortcut icon" href="images/favicon.png" type="img/x-icon">
+   <link rel="shortcut icon" href="<?php echo get_theme_file_uri('img/favicon.png')?>" type="img/x-icon">
    <?php wp_head(); ?>
    <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
