@@ -54,6 +54,13 @@ do_action( 'woocommerce_before_main_content' );
 	</div>
 	</div>
 </section>
+
+
+<div class="container main-product-file">
+
+
+
+
 <?php
 if ( woocommerce_product_loop() ) {
 
@@ -67,7 +74,9 @@ if ( woocommerce_product_loop() ) {
 	do_action( 'woocommerce_before_shop_loop' );
 
 	woocommerce_product_loop_start();
-
+?>
+<div class="col-md-9 left-shop">
+<?php
 	if ( wc_get_loop_prop( 'total' ) ) {
 		while ( have_posts() ) {
 			the_post();
@@ -80,7 +89,8 @@ if ( woocommerce_product_loop() ) {
 			wc_get_template_part( 'content', 'product' );
 		}
 	}
-
+?>
+<?php
 	woocommerce_product_loop_end();
 
 	/**
@@ -104,12 +114,21 @@ if ( woocommerce_product_loop() ) {
  * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
  */
 do_action( 'woocommerce_after_main_content' );
+?>
 
+
+<div class="col-md-3">
+<?php
 /**
  * Hook: woocommerce_sidebar.
  *
  * @hooked woocommerce_get_sidebar - 10
  */
 do_action( 'woocommerce_sidebar' );
+?>
 
+</div>
+</div>
+</div>
+<?php
 get_footer( 'shop' );

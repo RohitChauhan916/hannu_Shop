@@ -35,11 +35,14 @@ add_action('wp_enqueue_scripts', 'hannuMain');
     add_action('after_setup_theme','hannu_widgets_init');
 
 
+
 function hannu_setup(){
 
     add_theme_support( 'wc-product-gallery-lightbox' );
 	add_theme_support( 'wc-product-gallery-zoom' );
 	add_theme_support( 'wc-product-gallery-slider' );
+	
+	add_theme_support( 'woocommerce' );
 }
 add_action( 'after_setup_theme', 'hannu_setup' );
 

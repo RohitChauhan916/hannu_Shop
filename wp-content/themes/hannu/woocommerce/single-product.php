@@ -20,6 +20,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header( 'shop' ); ?>
+<section id="blog-content" class="section-padding">
+    <div class="container">
 
 	<?php
 		/**
@@ -30,7 +32,9 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_before_main_content' );
 	?>
-
+<div class="row">
+	        <div class="blog-main">
+		        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12"> 
 		<?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>
 
@@ -46,7 +50,11 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_after_main_content' );
 	?>
-
+</div>
+</div>
+ <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"> 
+                      <div class="right-block">
+					       <div class="right-block-div-top right-block-div">
 	<?php
 		/**
 		 * woocommerce_sidebar hook.
@@ -55,7 +63,12 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_sidebar' );
 	?>
-
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+</section>
 <?php
 get_footer( 'shop' );
 
