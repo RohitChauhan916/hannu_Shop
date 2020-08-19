@@ -29,7 +29,7 @@ get_header();
               ?>
 				    <div class="blog-div-block"> 
 						 <div class="featured-block">
-							 <?php the_post_thumbnail('thumbnail', array(
+							 <?php the_post_thumbnail('full', array(
 							 'loading' => 'lazy'
 							 ));?>
 						 </div> 

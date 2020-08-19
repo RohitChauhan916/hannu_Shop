@@ -34,7 +34,7 @@ get_header( 'shop' ); ?>
 	?>
 <div class="row">
 	        <div class="blog-main">
-		        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12"> 
+		        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12"> 
 		<?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>
 
@@ -52,7 +52,7 @@ get_header( 'shop' ); ?>
 	?>
 </div>
 </div>
- <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"> 
+ <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12"> 
                       <div class="right-block">
 					       <div class="right-block-div-top right-block-div">
 	<?php

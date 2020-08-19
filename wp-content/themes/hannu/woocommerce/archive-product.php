@@ -75,7 +75,7 @@ if ( woocommerce_product_loop() ) {
 
 	woocommerce_product_loop_start();
 ?>
-<div class="col-md-9 left-shop">
+<div class="col-md-9 col-sm-12 col-xs-12 left-shop">
 <?php
 	if ( wc_get_loop_prop( 'total' ) ) {
 		while ( have_posts() ) {
@@ -117,7 +117,7 @@ do_action( 'woocommerce_after_main_content' );
 ?>
 
 
-<div class="col-md-3">
+<div class="col-md-3  col-sm-12 col-xs-12 ">
 <?php
 /**
  * Hook: woocommerce_sidebar.

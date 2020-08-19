@@ -1731,7 +1731,30 @@ body.intro .header-image{
 
 
 @media all and (max-width:768px) {
+	ol.flex-control-nav.flex-control-thumbs {
+    width: 100%;
+    float: left;
+    padding: 0;
+    margin-top: 15px;
+    text-align: center;
+}
+ol.flex-control-nav.flex-control-thumbs li {
+    display: inline-block;
+    float: none;
+}
+
+.flex-viewport {
+    width: 95%;
+    display: inline-block;
+    float: right;
+}
+.onsale {
+    z-index: 9999;
+}
 	
+	.container.main-product-file .left-shop li, .related ul li{
+		width:50%;
+	}
 	
 	/*  open navigation banner */
 	.nav_men .navbar-brand{
@@ -1896,14 +1919,29 @@ display:none;
 
 @media all and (max-width:480px) {
 	
-
-	
+.container.main-product-file .left-shop li, .related ul li {
+    width: 80%;
+    text-align: center;
+}
 	.phone-div {
 	font-size: 17px;
 	margin: 2px 0 0;
 }
 .shop .banner-caption{
 	width:100%;
+}
+
+.products .columns-4 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.products .columns-4 li {
+    width: 58%;
+    margin-bottom: 20px;
+    margin-right: 13px;
+    position: relative;
+    float: none;
 }
 	/*
 	.work-banner {
